@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+   
+}
+h3, p{
+    padding: .8rem;
+}
+h3{
+    text-align: end;
+}
+.App{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.card{
+    background-color: white;
+    max-width: 500px;
+    padding: 1rem;
+    border-radius:.8rem;
+    box-shadow: 1px 1px 10px#0008;
+    
+    
+}
+.card__btn{
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    aspect-ratio: 1;
+    display: block;
+    margin-left: auto;
+    margin-bottom: .8rem;
+    cursor: pointer;
+    box-shadow: 0 0 4px #0005;
+}
+.card__btn:hover{
+    box-shadow: 0 0 10px #0005;
+    transform: scale(1.03);
+    transition: box-shadow 100ms ease, transform 100ms ease;
+}
+.card__icon{
+    font-size: 40px;
+    float: left;
+    padding-right: 10px;
+}
