@@ -1,5 +1,8 @@
 import React from 'react'
+import Author from './Author'
 import BtnQuote from './BtnQuote'
+import IconQuote from './IconQuote'
+import Quote from './Quote'
 
 
 const QuoteBox = ({quoteRandom, handleClick, colorRandom}) => {
@@ -14,15 +17,13 @@ const QuoteBox = ({quoteRandom, handleClick, colorRandom}) => {
   return (
   
     <article className='card' style={objStyle}> 
-         <div className='card__icon'>
-         <i class="fa-solid fa-quote-left"></i>
-        </div> 
-        <p className='card__quote'>
-            {quoteRandom.quote}
-        </p>
-        <h3 className='card__author'>
-            {quoteRandom.author}
-        </h3>
+        <IconQuote/>
+        <Quote
+        quoteRandom={quoteRandom}
+        />
+       <Author
+       quoteRandom={quoteRandom}
+       />
         <BtnQuote
         objStyleBtn={objStyleBtn}
         handleClick={handleClick}
